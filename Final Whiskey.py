@@ -34,7 +34,7 @@ def generate_table(dataframe, max_rows=10):
 app = dash.Dash(__name__, external_stylesheets=stylesheet)
 server = app.server
 
-df = pd.read_csv('/Users/yousufaziz/Desktop/Classes/MA 705 - Data Science/Dashboard/scotch_review2020.csv')
+df = pd.read_csv('/Users/yousufaziz/Documents/GitHub/Dashboard/scotch_review2020.csv')
 
 
 checklist_options = [{'label' : pricerange, 'value' : pricerange} for pricerange in set(df.range)]
